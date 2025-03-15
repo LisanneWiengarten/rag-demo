@@ -1,5 +1,5 @@
 # Setup
-- Copy relevant pdf files into data/pdfs
+- Copy relevant pdf files into data/pdfs. For simplicity, input pdfs are always expected at this location
 - Create a virtual environment for this service e.g. `conda create -n rag python=3.11` and activate it: `conda 
 activate rag`
 - Install the requirements: `pip install -r requirements.txt`
@@ -18,3 +18,7 @@ activate rag`
 - Better prompts
 - Better data cleaning
 - Better chunking
+- Better answers (more elaborate, include sources)
+- Better data storage (e.g. save separate pages)
+- More flexible LLM/OCR usage
+- More flexible methods (accept/return more basic types instead of nested dictionaries)
