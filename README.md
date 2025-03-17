@@ -1,5 +1,5 @@
 # Setup
-- Copy relevant pdf files into the `data` folder. For simplicity, input pdfs are always expected at this location
+- In the root directory, create a folder named `data` and copy all relevant pdfs there. For simplicity, input pdfs are always expected at this location
 - Create a virtual environment for this service e.g. `conda create -n rag python=3.11` and activate it: `conda 
 activate rag`
 - Install the requirements: `pip install -r requirements.txt`
