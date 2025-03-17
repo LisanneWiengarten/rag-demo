@@ -1,10 +1,10 @@
-tiktoken==0.9.*
-langchain-text-splitters==0.3.*
-pymupdf==1.25.*
+faiss-cpu==1.10.*
+llama-index==0.12.*
+llama-index-llms-huggingface==0.4.*
+llama-index-vector-stores-faiss==0.3.*
 openai==1.66.*
 pdf2image==1.17.*
+pymupdf==1.25.*
+spacy==3.8.*
+tiktoken==0.9.*
 tqdm==4.67.*
-llama-index-core==0.12.24.post1
-spacy==3.8.4
-faiss-cpu==1.10.0
-chromadb==0.6.3
