@@ -4,10 +4,12 @@ import os
 from io import BytesIO
 
 import pymupdf
+from dotenv import load_dotenv
 from openai import OpenAI
 from pdf2image import convert_from_path
 from tqdm import tqdm
 
+load_dotenv()
 llm_client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
 def extract_text_with_llm_ocr(pdf_path: str) -> str:

@@ -4,8 +4,8 @@
 activate rag`
 - Install the requirements: `pip install -r requirements.txt`
 - Download spacy model: `python -m spacy download de_core_news_lg`
-- Set your environment variables either in the terminal or in the [.env file](deployment/.env) (
-  easiest is to copy the [example](deployment/.env.example), rename it and change the values.
+- Set your environment variables either in the terminal or in the [.env file](.env) (
+  easiest is to copy the [example](.env.example), rename it and change the values.
 - finally, run the script `python main.py --path path/to/output_dir --create` to create a new index at the given 
   path or `python main.py --path path/to/output_dir --load` to load an existing index from the given path
 

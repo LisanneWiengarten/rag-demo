@@ -4,6 +4,7 @@ import os
 import sys
 
 from llama_index.llms.openai import OpenAI
+
 from chunking import split_texts_into_chunks
 from pdf_extraction import extract_text_from_folder
 from retrieval import load_vector_store_index, create_vector_store_index
@@ -40,7 +41,10 @@ if __name__ == "__main__":
     query_engine = index.as_query_engine(
         llm=OpenAI(model="gpt-4o"),
         system_prompt="Du bist ein hilfreicher Assistent. Antworte präzise und mit klaren Erklärungen. "
-                      "Antworte immer auf deutsch.")
+                      "Antworte immer auf deutsch.",
+        # similarity_top_k=10,
+        # response_mode="tree_summarize"
+    )
 
     response1 = query_engine.query("Wie hoch ist die Grundzulage?")
     print(response1.response + "\n\n")
