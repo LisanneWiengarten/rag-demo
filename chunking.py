@@ -3,7 +3,8 @@ from tqdm import tqdm
 
 nlp = spacy.load("de_core_news_lg")
 
-def split_texts_into_chunks(text_data: dict):
+
+def split_texts_into_chunks(text_data: dict) -> dict:
     """
     Splits the full_text of every given file into chunks
     :param text_data: A dictionary with ids as keys, and dictionaries with file_name and extracted texts as values

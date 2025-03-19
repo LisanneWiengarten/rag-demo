@@ -1,12 +1,8 @@
-from llama_index.core import Document
-import json
-
 import faiss
-from llama_index.core.indices.base import BaseIndex
-
-from llama_index.vector_stores.faiss import FaissVectorStore
-
+from llama_index.core import Document
 from llama_index.core import StorageContext, load_index_from_storage, VectorStoreIndex
+from llama_index.core.indices.base import BaseIndex
+from llama_index.vector_stores.faiss import FaissVectorStore
 
 
 def load_vector_store_index(persist_dir: str) -> BaseIndex:

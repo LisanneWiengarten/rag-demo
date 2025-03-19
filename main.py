@@ -27,6 +27,8 @@ if __name__ == "__main__":
         # Optional: Save intermediate step to json
         with open("data/extracted_data.json", "w", encoding="utf-8") as file:
             json.dump(extracted_texts_and_chunks, file)
+        # with open('data/extracted_data.json', encoding="utf-8") as file:
+        #     extracted_texts_and_chunks = json.load(file)
         index = create_vector_store_index(persist_dir=args.path, chunks=extracted_texts_and_chunks)
 
     elif args.load:

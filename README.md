@@ -21,7 +21,9 @@ activate rag`
 - Better data cleaning (e.g. remove all headers and footers)
 - Better chunking (e.g. consider paragraph numbers)
 - Tweak answers (e.g. more elaborate, include sources)
-- Better data storage (e.g. save separate pages)
-- More flexible LLM/OCR usage (e.g. easy option to use different vision model)
+- Better data storage (e.g. save separate pages, performant db)
+- More flexible LLM/OCR usage (e.g. easy option to use different vision model
+  like https://huggingface.co/ds4sd/SmolDocling-256M-preview)
 - More flexible methods (accept/return more basic types instead of nested dictionaries)
 - Don't hardcode directories/file names (e.g. make it at least a constant)
+- More object-oriented
